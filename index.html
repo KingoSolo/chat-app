@@ -13,6 +13,12 @@
             background-color: #08529d;
             box-shadow: 0 0 0.4em 0.3em #c3c3c333;
         }
+        .blue-bg{
+            background-color: #3292d2;
+        }
+        .gray-bg{
+            background-color: #3d5365;
+        }
     </style>
 </head>
 <body class="bg-gradient-to-br from-purple-800  via-indigo-700 to-blue-700 h-screen">
@@ -20,25 +26,25 @@
     <button class="p-2.5 border-none rounded-lg  w-full bg-custom text-white text-md hover:brightness-100 active:translate-y-1 bg-active" id="mark-selector">Mark</button>
     <button class="p-2.5 border-none rounded-lg  w-full bg-custom text-white text-md hover:brightness-100 active:translate-y-1 active:bg-blue-500" id="jane-selector">Jane</button>
  </div>
- <div class="bg-gray-800 font-serif rounded-lg px-2 py-1 m-auto max-w-6xl h-5/6 shadow-xl shadow-gray-500/50 ">
+ <div class="bg-gray-900 font-serif rounded-lg px-2 py-1 m-auto max-w-6xl h-5/6 shadow-xl shadow-gray-500/50 ">
     <h1 class="mb-5 text-3xl text-white font-medium">Mark chatting ...</h1>
 
-    <div class="h-96 overflow-auto">
-        <div class="p-5 rounded-md mb-5 flex flex-col text-white">
+    <div class="h-96 p-2 overflow-auto">
+        <div class="p-2 rounded-xl mb-5 flex flex-col text-white blue-bg">
             <div class="font-bold mb-1">Mark</div>
-            <div>Hey Jane,what's up?</div>
-            <div>10:30 AM</div>
+            <div class="text-md mb-2 text-wrap">Hey Jane,what's up?</div>
+            <div class="font-light text-right">10:30 AM</div>
         </div>
-        <div class="p-5 rounded-md mb-5 flex flex-col text-white">
+        <div class="p-2 rounded-xl mb-5 flex flex-col text-white gray-bg">
             <div class="font-bold mb-1">Jane</div>
-            <div>I'm okay, just battling with school. How about you?</div>
-            <div>10:35 AM</div>
+            <div class="text-md mb-2 text-wrap">I'm okay, just battling with school. How about you?</div>
+            <div class="font-light text-right">10:35 AM</div>
         </div>
     </div>
     
-    <form action="">
-        <input type="text" required placeholder="Type here,Mark..." class="" />
-        <button type="submit">Send</button>
+    <form action="" class="flex ">
+        <input type="text" required placeholder="Type here,Mark..." class="p-1.5 rounded-md grow text-md " />
+        <button type="submit" class="bg-blue-500 text-white rounded-md">Send</button>
     </form>
     <button>Clear chat</button>
  </div>
